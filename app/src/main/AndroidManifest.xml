@@ -18,6 +18,8 @@
         </activity>
 
         <activity android:name=".activity.AnimationActivity"/>
+        <activity android:name=".activity.MatrixActivity"/>
+        <activity android:name=".activity.TestChartActivity"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.zx.customview.R;
+import com.example.zx.customview.view.View5ChartTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Context context;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(context, AnimationActivity.class));
+//        startActivity(new Intent(context, AnimationActivity.class));
+//        startActivity(new Intent(context, MatrixActivity.class));
+        startActivity(new Intent(context, TestChartActivity.class));
     }
 }
