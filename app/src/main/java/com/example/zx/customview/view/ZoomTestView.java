@@ -83,11 +83,6 @@ public class ZoomTestView extends View {
         float rawX = event.getRawX();
         float rawY = event.getRawY();
 
-        float x0 = event.getX(0);
-        float y0 = event.getY(0);
-        float x1 = event.getX(1);
-        float y1 = event.getY(1);
-
         int pointCount = event.getPointerCount();
         if(pointCount == 1) {
             switch (event.getAction()) {
@@ -109,6 +104,11 @@ public class ZoomTestView extends View {
             }
         }
         else if(pointCount == 2) {
+            float x0 = event.getX(0);
+            float y0 = event.getY(0);
+            float x1 = event.getX(1);
+            float y1 = event.getY(1);
+
             switch (event.getAction()) {
                 case MotionEvent.ACTION_DOWN:
                     viewL = getLeft();

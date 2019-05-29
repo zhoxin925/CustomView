@@ -49,14 +49,19 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
 
-    <com.example.zx.customview.view.View9TransView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#f4b0b0" >
-        <View
-            android:layout_width="100dip"
-            android:layout_height="100dip"
-            android:background="#bed9f2"/>
-    </com.example.zx.customview.view.View9TransView>
+    <!--<com.example.zx.customview.view.View9TransView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#f4b0b0" >-->
+        <!--<View-->
+            <!--android:layout_width="100dip"-->
+            <!--android:layout_height="100dip"-->
+            <!--android:background="#bed9f2"/>-->
+    <!--</com.example.zx.customview.view.View9TransView>-->
+
+    <com.example.zx.customview.view.ZoomTestView
+    android:layout_width="200dip"
+    android:layout_height="200dip"
+        android:background="#d189ed"/>
 
 </LinearLayout>
