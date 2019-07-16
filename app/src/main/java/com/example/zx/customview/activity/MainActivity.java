@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         context = this;
 
+        String ss1 = "chart change on master!";
+        String ss2 = "chart change on dev!";
     }
 
     @Override
