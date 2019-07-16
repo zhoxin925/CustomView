@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+
+        String ssMaster = "I want to create a branch!";
+        String ssDev = "I am a new branch, dev!";
     }
 
     @Override
