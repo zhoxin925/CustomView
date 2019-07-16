@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String ss2 = "chart change on dev!";
 
         String ss4 = "on master";
+        String ss3 = "on dev!";
     }
 
     @Override
