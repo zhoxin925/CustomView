@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String ssMaster = "I want to create a branch!";
         String ssDev = "I am a new branch, dev!";
+
+        String ss = "I am Master branch!";
     }
 
     @Override
