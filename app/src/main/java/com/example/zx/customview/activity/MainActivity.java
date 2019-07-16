@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String ss = "I am Master branch!";
 
         String ss1 = "4 on master";
+
+        String ss5 = "5 on dev2!";
     }
 
     @Override
