@@ -13,6 +13,8 @@ public class MyMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String ss = "master change";
+        String ss1 = "dev change";
     }
 
 }
