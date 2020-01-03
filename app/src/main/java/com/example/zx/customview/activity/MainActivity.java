@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.zx.customview.R;
+import com.example.zx.customview.view.View11SlideBar;
 import com.example.zx.customview.view.View5ChartTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -15,7 +17,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_slidebar);
+        //setContentView(R.layout.activity_main);
         //setContentView(R.layout.activity_main2); //CoordinatorLayout
         context = this;
 
@@ -24,6 +27,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         String ss4 = "on master";
         String ss3 = "on dev!";
+
+
+        View11SlideBar slideBar = findViewById(R.id.slidebar);
+        final TextView toastTv = findViewById(R.id.toast_tv);
+
+        slideBar.setOnListener(new View11SlideBar.onTouchListener() {
+            @Override
+            public void onClick(int choose, String str) {
+                toastTv.setText(str);
+            }
+        });
     }
 
     @Override

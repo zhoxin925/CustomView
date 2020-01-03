@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="slidebar_style">
+        <attr name="layout_background" format="reference"/>
+        <attr name="textSize" format="integer"/>
+        <attr name="textNormalColor" format="color"/>
+        <attr name="textCheckedColor" format="color"/>
+
+        <!--<attr name="toast_background" format="reference"/>-->
+        <!--<attr name="toast_textSize" format="integer"/>-->
+        <!--<attr name="toast_textColor" format="color"/>-->
+    </declare-styleable>
+
+</resources>
