@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.zx.customview">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -8,8 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.ImageLoaderActivity"
             android:hardwareAccelerated="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +22,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.AnimationActivity"/>
         <activity android:name=".activity.MatrixActivity"/>
         <activity android:name=".activity.TestChartActivity"/>
+        <activity android:name=".activity.ZoomActivity"/>
+        <activity android:name=".activity.MatrixBitmapActivity"/>
+        <!--<activity android:name=".activity.ImageLoaderActivity"/>-->
     </application>
 
 </manifest>
