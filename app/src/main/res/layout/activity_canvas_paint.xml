@@ -4,9 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.zx.customview.view.CanvasPaintPracView
+    <!--<com.example.zx.customview.view.CanvasPaintPracView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="80dip"/>-->
+
+    <com.example.zx.customview.view.CanvasBeziers2View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="80dip"/>
+        android:layout_height="match_parent"/>
 
 </android.support.constraint.ConstraintLayout>
