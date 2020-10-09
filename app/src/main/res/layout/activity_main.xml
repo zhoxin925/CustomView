@@ -74,37 +74,37 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"/>-->
 
-    <!--<com.example.zx.customview.view.ClockView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+    <com.example.zx.customview.view.ClockView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <!--<com.example.zx.customview.view.ScrollZoomView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
         <!--android:background="#FDE9E9"/>-->
 
-    <FrameLayout
-        android:layout_width="200dip"
-        android:layout_height="200dip"
-        android:background="#FFDAA5">
-        <AbsoluteLayout
-            android:layout_width="100dip"
-            android:layout_height="100dip"
-            android:background="#7AF0FD">
+<!--    <FrameLayout-->
+<!--        android:layout_width="200dip"-->
+<!--        android:layout_height="200dip"-->
+<!--        android:background="#FFDAA5">-->
+<!--        <AbsoluteLayout-->
+<!--            android:layout_width="100dip"-->
+<!--            android:layout_height="100dip"-->
+<!--            android:background="#7AF0FD">-->
 
-            <com.example.zx.customview.view.MatrixBitmapImageView
-                android:id="@+id/matrix_imageview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#FAC5C1"/>
+<!--            <com.example.zx.customview.view.MatrixBitmapImageView-->
+<!--                android:id="@+id/matrix_imageview"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#FAC5C1"/>-->
 
-        </AbsoluteLayout>
+<!--        </AbsoluteLayout>-->
 
-    </FrameLayout>
-    <Button
-        android:id="@+id/button"
-        android:layout_marginTop="20dip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="移动"/>
+<!--    </FrameLayout>-->
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_marginTop="20dip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="移动"/>-->
 </LinearLayout>

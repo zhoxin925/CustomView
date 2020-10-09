@@ -43,24 +43,26 @@ public class ClockView extends View {
         paint.setStrokeCap(Paint.Cap.SQUARE);
         paint.setStrokeJoin(Paint.Join.ROUND);
 
+//        paint.setTextSize(20);
+//        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/simkai.ttf"));//Typeface.createFromFile();
+//        float xinLen20 = paint.measureText("A");
+//        Log.i("sss1", xinLen20+"");
+//
+//        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/msyh.ttc"));//Typeface.createFromFile();
+//        float xinLen220 = paint.measureText("A");
+//        Log.i("sss2", xinLen220+"");
+//
+//        paint.setTextSize(10);
+//        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/simkai.ttf"));//Typeface.createFromFile();
+//        float xinLen10 = paint.measureText("A");
+//        Log.i("sss3", xinLen10+"");
+//
+//        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/msyh.ttc"));//Typeface.createFromFile();
+//        float xinLen210 = paint.measureText("A");
+//        Log.i("sss4", xinLen210+"");
 
-        paint.setTextSize(20);
-        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/simkai.ttf"));//Typeface.createFromFile();
-        float xinLen20 = paint.measureText("A");
-        Log.i("sss1", xinLen20+"");
-
-        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/msyh.ttc"));//Typeface.createFromFile();
-        float xinLen220 = paint.measureText("A");
-        Log.i("sss2", xinLen220+"");
-
-        paint.setTextSize(10);
-        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/simkai.ttf"));//Typeface.createFromFile();
-        float xinLen10 = paint.measureText("A");
-        Log.i("sss3", xinLen10+"");
-
-        paint.setTypeface(Typeface.createFromAsset(mContext.getAssets(), "fonts/msyh.ttc"));//Typeface.createFromFile();
-        float xinLen210 = paint.measureText("A");
-        Log.i("sss4", xinLen210+"");
+        String str = "μ";
+        Log.i("strlen", paint.measureText(str)+"");
     }
 
     @Override
@@ -106,5 +108,11 @@ public class ClockView extends View {
         canvas.drawCircle(0,0, 8, paint);
 
         canvas.restore();
+
+        paint.setStrokeWidth(2);
+        paint.setTextSize(50);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setTypeface(Typeface.MONOSPACE);
+        canvas.drawText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 50, 50, paint);
     }
 }

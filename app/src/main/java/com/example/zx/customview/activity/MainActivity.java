@@ -36,7 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         timer.scheduleAtFixedRate(timerTask, 10000, 3000);
         //timerTask.cancel();*/
 
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main);
+
+//        setContentView(R.layout.activity_main1);
 //        //setContentView(R.layout.activity_main2); //CoordinatorLayout
 //        context = this;
 //
