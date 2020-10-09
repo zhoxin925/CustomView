@@ -11,7 +11,10 @@ import android.view.View;
 
 /**
  * Created by zx on 2020/10/8 20:35
+ *
+ * https://hencoder.com/ui-1-1/
  * https://www.jianshu.com/p/12fcc3fedbbc
+ *
  * Describe: 二阶贝塞尔曲线 Beziers
  */
 public class CanvasBeziers2View extends View {
