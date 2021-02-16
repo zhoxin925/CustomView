@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.CanvasPaintActivity"
-            android:hardwareAccelerated="false">
+        <activity
+            android:name=".activity.SystemUiFlagActivity"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +31,8 @@
         <activity android:name=".activity.ZoomActivity"/>
         <activity android:name=".activity.MatrixBitmapActivity"/>
         <activity android:name=".activity.ImageLoaderActivity"/>
+        <activity android:name=".activity.CanvasPaintActivity"/>
+        <!--<activity android:name=".activity.SystemUiFlagActivity"/>-->
         <!--<activity android:name=".activity.CanvasPaintActivity"/>-->
         <activity android:name=".touping.TestActivity"/>
     </application>
