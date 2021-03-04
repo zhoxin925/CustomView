@@ -45,7 +45,7 @@ public class MatrixBitmapActivity extends Activity implements View.OnClickListen
         findViewById(R.id.postscale).setOnClickListener(this);
         findViewById(R.id.reset).setOnClickListener(this);
 
-        bitmap = BitmapFactory.decodeResource(this.getResources(), R.mipmap.ic_launcher);
+        bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.ic_launcher);
         operBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         canvas = new Canvas(operBitmap);
 

@@ -51,7 +51,7 @@ public class View7Picture extends View {
         Canvas canvas = picture.beginRecording(500, 500);
 
         //canvas.translate(250, 250);
-        Bitmap bitmap = BitmapFactory.decodeResource(mContext.getResources(), R.mipmap.ic_launcher);
+        Bitmap bitmap = BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_launcher);
         //canvas.drawBitmap(bitmap, 0, 0, mPaint);
 
         canvas.translate(250, 250);

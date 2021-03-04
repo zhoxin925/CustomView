@@ -7,14 +7,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.CanvasPaintActivity"
-            android:hardwareAccelerated="false">
+        <activity
+            android:name=".activity.AnimationActivity"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +25,14 @@
         </activity>
 
         <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.AnimationActivity"/>
+        <!--<activity android:name=".activity.AnimationActivity"/>-->
         <activity android:name=".activity.MatrixActivity"/>
         <activity android:name=".activity.TestChartActivity"/>
         <activity android:name=".activity.ZoomActivity"/>
         <activity android:name=".activity.MatrixBitmapActivity"/>
         <activity android:name=".activity.ImageLoaderActivity"/>
+        <activity android:name=".activity.CanvasPaintActivity"/>
+        <!--<activity android:name=".activity.SystemUiFlagActivity"/>-->
         <!--<activity android:name=".activity.CanvasPaintActivity"/>-->
         <activity android:name=".activity.ToupingTestActivity"/>
     </application>

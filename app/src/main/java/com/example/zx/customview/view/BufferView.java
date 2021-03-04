@@ -55,7 +55,7 @@ public class BufferView extends View {
         bufferBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         bufferCanvas = new Canvas(bufferBitmap);
 
-        Bitmap pic = ((BitmapDrawable) getResources().getDrawable(R.mipmap.ic_launcher)).getBitmap();
+        Bitmap pic = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
         bufferCanvas.drawBitmap(pic, 0, 0, paint);
 
         if (mCircleR >= (getWidth() / 10)) {
