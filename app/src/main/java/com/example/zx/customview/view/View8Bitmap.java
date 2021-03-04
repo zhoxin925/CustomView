@@ -46,7 +46,7 @@ public class View8Bitmap extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_picture);
+        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_picture);
 
         //会截取原图的srcrectf部分
         Rect srcrectf = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());

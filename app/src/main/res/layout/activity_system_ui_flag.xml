@@ -11,6 +11,6 @@
         android:layout_height="match_parent"
         android:layout_margin="3dip"
         android:scaleType="fitXY"
-        android:src="@mipmap/bg2"/>
+        android:src="@drawable/bg2"/>
 
 </RelativeLayout>

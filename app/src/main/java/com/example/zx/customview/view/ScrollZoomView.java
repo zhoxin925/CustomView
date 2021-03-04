@@ -61,7 +61,7 @@ public class ScrollZoomView extends android.support.v7.widget.AppCompatImageView
         matrix = new Matrix();
         downmatrix = new Matrix();
 
-        bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
+        bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
     }
 
     @Override

@@ -71,7 +71,7 @@ public class MatrixActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.change).setOnClickListener(this);
         findViewById(R.id.reset).setOnClickListener(this);
 
-        bitmap = BitmapFactory.decodeResource(this.getResources(), R.mipmap.ic_launcher);
+        bitmap = BitmapFactory.decodeResource(this.getResources(), R.drawable.ic_launcher);
         updateBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), bitmap.getConfig());
         canvas = new Canvas(updateBitmap);
         paint = new Paint();
