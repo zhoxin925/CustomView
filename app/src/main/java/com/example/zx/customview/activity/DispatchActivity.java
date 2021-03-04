@@ -14,7 +14,6 @@ public class DispatchActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String ss = "master change";
-        String ss1 = "dev change";
     }
 
 }

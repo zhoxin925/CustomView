@@ -54,4 +54,9 @@ public class View2TextView extends TextView {
         super.onDraw(canvas);
         canvas.restore();
     }
+
+    @Override
+    public boolean performClick() {
+        return super.performClick();
+    }
 }

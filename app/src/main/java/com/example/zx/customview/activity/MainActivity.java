@@ -12,6 +12,11 @@ import android.widget.Button;
 
 import com.example.zx.customview.R;
 import com.example.zx.customview.view.MatrixBitmapImageView;
+import android.widget.TextView;
+
+import com.example.zx.customview.R;
+import com.example.zx.customview.view.View11SlideBar;
+import com.example.zx.customview.view.View5ChartTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Context context;
@@ -36,7 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         timer.scheduleAtFixedRate(timerTask, 10000, 3000);
         //timerTask.cancel();*/
 
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main2); //CoordinatorLayout
+        setContentView(R.layout.activity_slidebar);
+        context = this;
 
 //        setContentView(R.layout.activity_main1);
 //        //setContentView(R.layout.activity_main2); //CoordinatorLayout
@@ -64,6 +72,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                imageView.setImageMatrix(matrix);
 //            }
 //        });
+
+        String ss4 = "on master";
+        String ss3 = "on dev!";
+
+
+        View11SlideBar slideBar = findViewById(R.id.slidebar);
+        final TextView toastTv = findViewById(R.id.toast_tv);
+
+        slideBar.setOnListener(new View11SlideBar.onTouchListener() {
+            @Override
+            public void onClick(int choose, String str) {
+                toastTv.setText(str);
+            }
+        });
+
     }
     private int trans = 1;
 
