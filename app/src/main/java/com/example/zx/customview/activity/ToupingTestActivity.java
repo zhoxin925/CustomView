@@ -1,4 +1,4 @@
-package com.example.zx.customview.touping;
+package com.example.zx.customview.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,8 +13,9 @@ import android.widget.Toast;
 
 
 import com.example.zx.customview.R;
+import com.example.zx.customview.touping.MyPresentation;
 
-public class TestActivity extends Activity {
+public class ToupingTestActivity extends Activity {
     private Display[] displays;
 
     @Override
@@ -29,12 +30,12 @@ public class TestActivity extends Activity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MediaRouter mediaRouter = (MediaRouter) TestActivity.this.getSystemService(Context.MEDIA_ROUTER_SERVICE);
+                MediaRouter mediaRouter = (MediaRouter) ToupingTestActivity.this.getSystemService(Context.MEDIA_ROUTER_SERVICE);
                 MediaRouter.RouteInfo routeInfo = mediaRouter.getSelectedRoute(MediaRouter.ROUTE_TYPE_LIVE_VIDEO);
                 if (routeInfo != null) {
                     Display presenDisplay = routeInfo.getPresentationDisplay();
                     if (presenDisplay != null) {
-                        MyPresentation myPresentation = new MyPresentation(TestActivity.this, presenDisplay);
+                        MyPresentation myPresentation = new MyPresentation(ToupingTestActivity.this, presenDisplay);
                         myPresentation.show();
                     }
                 }
@@ -44,7 +45,7 @@ public class TestActivity extends Activity {
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DisplayManager displayManager = (DisplayManager) TestActivity.this.getSystemService(Context.DISPLAY_SERVICE);
+                DisplayManager displayManager = (DisplayManager) ToupingTestActivity.this.getSystemService(Context.DISPLAY_SERVICE);
                 displays = displayManager.getDisplays(DisplayManager.DISPLAY_CATEGORY_PRESENTATION);
                 if (displays.length > 0) {
                     for (int i = 0; i < displays.length; i++) {
@@ -55,7 +56,7 @@ public class TestActivity extends Activity {
                         ll.rightMargin = 30;
                         ll.bottomMargin = 30;
 
-                        TextView textView = new TextView(TestActivity.this);
+                        TextView textView = new TextView(ToupingTestActivity.this);
                         textView.setBackgroundColor(0xffeeeeee);
                         textView.setLayoutParams(ll);
                         textView.setText(displays[i].getName());
@@ -63,14 +64,14 @@ public class TestActivity extends Activity {
                         textView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v1) {
-                                MyPresentation presentation = new MyPresentation(TestActivity.this, displays[(int) v1.getTag()]);
+                                MyPresentation presentation = new MyPresentation(ToupingTestActivity.this, displays[(int) v1.getTag()]);
                                 presentation.show();
                             }
                         });
                         content.addView(textView);
                     }
                 } else {
-                    Toast.makeText(TestActivity.this, "搜索不到任何设备！！！", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ToupingTestActivity.this, "搜索不到任何设备！！！", Toast.LENGTH_SHORT).show();
                 }
             }
         });

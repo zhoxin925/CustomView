@@ -10,7 +10,7 @@ import com.example.zx.customview.R;
  * Created by zx on 2021/1/17 9:06
  * Describe:
  */
-class MyPresentation extends Presentation {
+public class MyPresentation extends Presentation {
 
     public MyPresentation(Context outerContext, Display display) {
         super(outerContext, display);

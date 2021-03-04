@@ -30,7 +30,7 @@
         <activity android:name=".activity.MatrixBitmapActivity"/>
         <activity android:name=".activity.ImageLoaderActivity"/>
         <!--<activity android:name=".activity.CanvasPaintActivity"/>-->
-        <activity android:name=".touping.TestActivity"/>
+        <activity android:name=".activity.ToupingTestActivity"/>
     </application>
 
 </manifest>
