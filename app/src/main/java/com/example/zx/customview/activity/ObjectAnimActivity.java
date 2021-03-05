@@ -30,12 +30,17 @@ public class ObjectAnimActivity extends AppCompatActivity {
     }
 
     private void objAnimation() {
+        /**
+         * https://blog.csdn.net/carson_ho/article/details/72909894   属性动画
+         *
+         * ObjectAnimator类根据传入的属性名 去寻找 该对象对应属性名的 set（） & get（）方法，从而进行对象属性值的赋值
+         */
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "alpha", 1f, 0f, 1f);
-        //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "rotation", 0, 360);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "rotation", 0, 360);//rotationX, rotationY
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "translationX", 0, getScreenWH().x, 0);
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "translationY", 0, getScreenWH().y, 0);
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "scaleX", 0, 1, 1.5f, 1);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "scaleY", 0, 1, 1.5f, 1);
+        //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "scaleY", 0, 1, 1.5f, 1);
         animator.setDuration(6000);
         animator.start();
     }

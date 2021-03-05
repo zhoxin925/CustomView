@@ -33,6 +33,7 @@ public class ValueAnimActivity extends AppCompatActivity {
         roundIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //https://blog.csdn.net/carson_ho/article/details/72909894   属性动画
                 ValueAnimator animator = ValueAnimator.ofObject(new PointEvaluator(), startPoint, endPoint);
                 animator.setRepeatCount(2);
                 animator.setDuration(6000);
