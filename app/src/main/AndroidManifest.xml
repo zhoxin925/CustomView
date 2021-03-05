@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.AnimationActivity"
+            android:name=".activity.ObjectAnimActivity"
             android:hardwareAccelerated="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -25,16 +25,18 @@
         </activity>
 
         <activity android:name=".activity.MainActivity"/>
-        <!--<activity android:name=".activity.AnimationActivity"/>-->
+        <activity android:name=".activity.AnimationActivity"/>
         <activity android:name=".activity.MatrixActivity"/>
         <activity android:name=".activity.TestChartActivity"/>
         <activity android:name=".activity.ZoomActivity"/>
         <activity android:name=".activity.MatrixBitmapActivity"/>
         <activity android:name=".activity.ImageLoaderActivity"/>
         <activity android:name=".activity.CanvasPaintActivity"/>
-        <!--<activity android:name=".activity.SystemUiFlagActivity"/>-->
-        <!--<activity android:name=".activity.CanvasPaintActivity"/>-->
+        <activity android:name=".activity.SystemUiFlagActivity"/>
         <activity android:name=".activity.ToupingTestActivity"/>
+        <activity android:name=".activity.AnimInterpolatorActivity"/>
+        <activity android:name=".activity.ValueAnimActivity"/>
+        <!--<activity android:name=".activity.ObjectAnimActivity"/>-->
     </application>
 
 </manifest>

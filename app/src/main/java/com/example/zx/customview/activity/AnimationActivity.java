@@ -1,5 +1,7 @@
 package com.example.zx.customview.activity;
 
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
@@ -11,6 +13,8 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
@@ -121,6 +125,7 @@ public class AnimationActivity extends Activity implements View.OnClickListener 
                 //transAnimation = AnimationUtils.loadAnimation(AnimationActivity.this, R.anim.view_animation_translate);
                 transAnimation = new TranslateAnimation(0,200,0,600);
                 transAnimation.setDuration(1000);
+                transAnimation.setInterpolator(new LinearInterpolator());
                 imageView.startAnimation(transAnimation);
                 break;
 
@@ -172,8 +177,15 @@ public class AnimationActivity extends Activity implements View.OnClickListener 
         if(valueAnimator != null) {
             valueAnimator.cancel();
         }
-        valueAnimator = ValueAnimator.ofInt(0, 1000);
-        valueAnimator.setDuration(duration);
+        //Animator animator = AnimatorInflater.loadAnimator(this, R.animator.set_animator);
+        valueAnimator = ValueAnimator.ofInt(0, 1000);//ofFloat(); ofObject()
+        valueAnimator.setDuration(duration);//动画运行的时长
+        valueAnimator.setStartDelay(10);//动画延迟播放时间
+        valueAnimator.setRepeatCount(0);//动画重复播放次数 = 重放次数+1; =infinite时,动画无限重复
+        valueAnimator.setRepeatMode(ValueAnimator.RESTART);//RESTART(默认):正序重放; REVERSE:倒序回放
+        valueAnimator.setInterpolator(new DecelerateInterpolator());//插值器，默认线性
+
+        //将改变的值手动赋值给对象的属性值：通过动画的更新监听器
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
