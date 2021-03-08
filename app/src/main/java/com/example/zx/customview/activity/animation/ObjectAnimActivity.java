@@ -1,4 +1,4 @@
-package com.example.zx.customview.activity;
+package com.example.zx.customview.activity.animation;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
@@ -41,8 +41,6 @@ public class ObjectAnimActivity extends AppCompatActivity {
 
     private void objAnimation() {
         /**
-         * https://blog.csdn.net/carson_ho/article/details/72909894   属性动画
-         *
          * ObjectAnimator类根据传入的属性名 去寻找 该对象对应属性名的 set（） & get（）方法，从而进行对象属性值的赋值
          *
          * with/height无效，因为其是设置的最大宽高---->继承原对象（ImageView）--setWidth--mTarget.getLayoutParams().width = width;

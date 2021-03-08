@@ -1,4 +1,4 @@
-package com.example.zx.customview.activity;
+package com.example.zx.customview.activity.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
@@ -27,6 +27,8 @@ import static android.view.animation.Animation.INFINITE;
 
 /**
  * Created by zhouxin on 2018/11/12.
+ *
+ * https://www.jianshu.com/p/1007f300f17a Android Transition（Android过渡动画）
  */
 
 public class AnimationActivity extends Activity implements View.OnClickListener {

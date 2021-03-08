@@ -1,4 +1,4 @@
-package com.example.zx.customview.activity;
+package com.example.zx.customview.activity.animation;
 
 import android.animation.ValueAnimator;
 import android.os.Bundle;
