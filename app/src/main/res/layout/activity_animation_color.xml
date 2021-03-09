@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.zx.customview.animation.view.ArgbColorView
+        android:id="@+id/view"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<View
+        android:id="@+id/view"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="#ffff0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+</android.support.constraint.ConstraintLayout>

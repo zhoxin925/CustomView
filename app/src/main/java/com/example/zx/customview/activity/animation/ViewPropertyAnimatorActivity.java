@@ -30,6 +30,8 @@ import android.support.v7.app.AppCompatActivity;
  *         // 如果不想使用这一默认机制，也可以显式地调用start()方法来启动动画
  *
  * 原文链接：https://blog.csdn.net/carson_ho/article/details/72909894
+ *
+ * ViewPropertyAnimator 不支持重复，所以setRepeatMode() / setRepeatCount() 或 repeat()对 ViewPropertyAnimator 相当于无效
  */
 
 public class ViewPropertyAnimatorActivity extends AppCompatActivity {

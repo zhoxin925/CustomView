@@ -1,8 +1,6 @@
-package com.example.zx.customview.other;
+package com.example.zx.customview.gesture;
 
-import android.content.Context;
 import android.view.GestureDetector;
-import android.view.View;
 import android.widget.Scroller;
 
 import com.example.zx.customview.view.View10GestureDetector;

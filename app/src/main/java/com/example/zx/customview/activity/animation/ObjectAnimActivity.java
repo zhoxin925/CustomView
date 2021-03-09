@@ -1,6 +1,7 @@
 package com.example.zx.customview.activity.animation;
 
 import android.animation.ObjectAnimator;
+import android.animation.TimeInterpolator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -45,14 +46,28 @@ public class ObjectAnimActivity extends AppCompatActivity {
          *
          * with/height无效，因为其是设置的最大宽高---->继承原对象（ImageView）--setWidth--mTarget.getLayoutParams().width = width;
          */
+
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "alpha", 1f, 0f, 1f);
-        ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "rotation", 0, 360);//rotationX, rotationY
+        //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "rotation", 0, 360);//rotationX, rotationY
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "translationX", 0, getScreenWH().x, 0);
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "translationY", 0, getScreenWH().y, 0);
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "scaleX", 0, 1, 1.5f, 1);
         //ObjectAnimator animator = ObjectAnimator.ofFloat(roundIv, "scaleY", 0, 1, 1.5f, 1);
-        animator.setDuration(6000);
-        animator.start();
+        //animator.setDuration(6000);
+        //animator.start();
+
+        ObjectAnimator animator1 = new ObjectAnimator();
+        animator1.setInterpolator(new TimeInterpolator() {
+            @Override
+            public float getInterpolation(float input) {
+                return 0;
+            }
+        });
+        animator1.setTarget(roundIv);
+        animator1.setPropertyName("rotation");
+        animator1.setFloatValues(0, 360);
+        animator1.setDuration(6000);
+        animator1.start();
     }
 
     private android.graphics.Point measureView(View view) {
