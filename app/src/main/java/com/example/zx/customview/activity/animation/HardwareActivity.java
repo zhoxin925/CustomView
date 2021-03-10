@@ -12,7 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * 记录一些硬件加速相关的信息
+ * 记录一些硬件加速相关的信息  https://developer.android.google.cn/guide/topics/graphics/hardware-accel.html
  *
  * Android里，专指把View中绘制计算工作交给GPU处理在
  *
