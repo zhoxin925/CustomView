@@ -3,6 +3,9 @@ package com.example.zx.customview.activity.animation;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
+
+import com.example.zx.customview.R;
 
 /**
  * // 使用解析
@@ -39,5 +42,9 @@ public class ViewPropertyAnimatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_animation);
+        ImageView imageView = findViewById(R.id.imageview);
+        imageView.animate().translationX(100);
     }
 }

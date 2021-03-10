@@ -1,6 +1,5 @@
 package com.example.zx.customview.activity.animation;
 
-import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.zx.customview.R;
+import com.example.zx.customview.animation.ArgbEvaluator;
 import com.example.zx.customview.animation.view.ArgbColorView;
 
 public class ColorAnimActivity extends AppCompatActivity {

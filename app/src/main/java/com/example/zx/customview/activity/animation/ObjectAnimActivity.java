@@ -1,9 +1,12 @@
 package com.example.zx.customview.activity.animation;
 
+import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.animation.TimeInterpolator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -11,7 +14,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.zx.customview.R;
-import com.example.zx.customview.bean.Point;
+import com.example.zx.customview.animation.view.Practice06KeyframeView;
+import com.example.zx.customview.animation.view.ProgressView;
 
 /**
  * 组合动画
@@ -25,19 +29,38 @@ import com.example.zx.customview.bean.Point;
 
 public class ObjectAnimActivity extends AppCompatActivity {
     private ImageView roundIv;
+    private ProgressView progressView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_objectanim);
 
+        progressView = findViewById(R.id.progress);
         roundIv = findViewById(R.id.round_iv);
         roundIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                objAnimation();
+                //objAnimation();
+                properAnimation();
             }
         });
+    }
+
+    private void properAnimation() {
+        /*ObjectAnimator animator = ObjectAnimator.ofInt(progressView, "progress", 0, 100);
+        animator.setDuration(2000);
+        animator.start();*/
+
+        Keyframe keyframe1 = Keyframe.ofFloat(0, 0);
+        Keyframe keyframe2 = Keyframe.ofFloat(0.5f, 100);
+        Keyframe keyframe3 = Keyframe.ofFloat(1, 80);
+        PropertyValuesHolder holder = PropertyValuesHolder.ofKeyframe("progress"
+                , keyframe1, keyframe2, keyframe3);
+        ObjectAnimator animator1 = ObjectAnimator.ofPropertyValuesHolder(progressView, holder);
+        animator1.setDuration(6000);
+        animator1.setInterpolator(new FastOutSlowInInterpolator());
+        animator1.start();
     }
 
     private void objAnimation() {

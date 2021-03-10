@@ -5,8 +5,14 @@
 
     <ImageView
         android:id="@+id/round_iv"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_yinbiao"
+        android:src="@drawable/ic_launcher_round"
         android:background="#D3C0C0"/>
+
+    <com.example.zx.customview.animation.view.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_centerInParent="true"/>
 </RelativeLayout>

@@ -29,6 +29,40 @@ import static android.view.animation.Animation.INFINITE;
  * Created by zhouxin on 2018/11/12.
  *
  * https://www.jianshu.com/p/1007f300f17a Android Transition（Android过渡动画）
+ *
+ *
+ *
+ *
+ * 一.ViewPropertyAnimator:
+ *      view.animate().translate/scale/rotate/alpha
+ *
+ *
+ * 二.帧动画：AnimationDrawable
+ *
+ *
+ * 三.View动画：Translate/Scale/Rotate/Alpha Animation; LayoutAnimation
+ *
+ *
+ * 四.属性动画：Animator
+ *
+ *      1.ValueAnimator
+ *
+ *      2.ObjectAnimator
+ *
+ *      3.PropertyValusHolder
+ *          对多个属性同时做动画
+ *          PropertyValuesHolder holder = PropertyValuesHolder.ofFloat(propertyName, values...);
+ *          ObjectAnimator animator = ObjectAnimator.ofPropertyValuesHolder(target, holder...)
+ *
+ *      4.Keyframe
+ *          把一个属性拆分成多段，执行更加精细的属性动画
+ *          Kerframe keyframe = Keyframe.ofFloat(fraction, value)
+ *          PrepertyValuesHolder holder = PrepertyValuesHolder.ofKeyframe(propertyName, keyframes...)
+ *
+ *      5.AnimatorSet
+ *          来同时管理调配多个动画
+ *          play(animator)/playTogether(animator)/before(animator)/after(animator)/after(time)/with(animator)
+ *
  */
 
 public class AnimationActivity extends Activity implements View.OnClickListener {
