@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" group="CustomView" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CustomView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CustomView.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="CustomView/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/.idea/modules/myapplication/myapplication.iml" group="CustomView/myapplication" />
     </modules>
   </component>
 </project>

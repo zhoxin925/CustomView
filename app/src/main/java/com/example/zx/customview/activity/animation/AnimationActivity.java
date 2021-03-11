@@ -40,7 +40,7 @@ import static android.view.animation.Animation.INFINITE;
  * 二.帧动画：AnimationDrawable
  *
  *
- * 三.View动画：Translate/Scale/Rotate/Alpha Animation; LayoutAnimation
+ * 三.View动画：Translate/Scale/Rotate/AlphaAnimation; LayoutAnimation
  *
  *
  * 四.属性动画：Animator
