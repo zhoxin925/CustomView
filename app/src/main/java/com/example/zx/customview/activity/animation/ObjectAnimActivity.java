@@ -4,8 +4,16 @@ import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.TimeInterpolator;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
@@ -42,9 +50,35 @@ public class ObjectAnimActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //objAnimation();
-                properAnimation();
+                //properAnimation();
+                notifyTest();
             }
         });
+
+        notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            String channelId = "chat";
+            String channelName = "聊天消息";
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+
+            NotificationChannel channel = new NotificationChannel(channelId, channelName, importance);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private NotificationManager notificationManager;
+    private void notifyTest() {
+        Notification notification = new NotificationCompat.Builder(this, "chat")
+                .setAutoCancel(true)
+                .setContentTitle("内容标题")
+                .setContentText("今天周五啦，开心一点")
+                .setWhen(System.currentTimeMillis())
+                .setSmallIcon(R.drawable.ic_launcher_round)
+                .setColor(Color.parseColor("#234465"))
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.bg))
+                //.setContentIntent(pendingIntent)
+                .build();
+        notificationManager.notify(1, notification);
     }
 
     private void properAnimation() {

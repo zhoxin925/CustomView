@@ -12,9 +12,10 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:resizeableActivity="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.animation.ObjectAnimActivity"
+            android:name=".activity.NotificationActivity"
             android:hardwareAccelerated="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -36,8 +37,17 @@
         <activity android:name=".activity.ToupingTestActivity"/>
         <activity android:name=".activity.animation.AnimInterpolatorActivity"/>
         <activity android:name=".activity.animation.ValueAnimActivity"/>
-<!--        <activity android:name=".activity.animation.ObjectAnimActivity"/>-->
+        <activity android:name=".activity.animation.ObjectAnimActivity"/>
         <activity android:name=".activity.animation.ColorAnimActivity"/>
+<!--        <activity android:name=".activity.NotificationActivity"/>-->
+
+        <service android:name=".service.MyNotificationService"
+            android:label="NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
