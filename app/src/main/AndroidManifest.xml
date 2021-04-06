@@ -15,7 +15,7 @@
         android:resizeableActivity="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.NotificationActivity"
+            android:name=".touping.ToupingTestActivity"
             android:hardwareAccelerated="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -34,12 +34,12 @@
         <activity android:name=".activity.ImageLoaderActivity"/>
         <activity android:name=".activity.CanvasPaintActivity"/>
         <activity android:name=".activity.SystemUiFlagActivity"/>
-        <activity android:name=".activity.ToupingTestActivity"/>
+<!--        <activity android:name=".touping.ToupingTestActivity"/>-->
         <activity android:name=".activity.animation.AnimInterpolatorActivity"/>
         <activity android:name=".activity.animation.ValueAnimActivity"/>
         <activity android:name=".activity.animation.ObjectAnimActivity"/>
         <activity android:name=".activity.animation.ColorAnimActivity"/>
-<!--        <activity android:name=".activity.NotificationActivity"/>-->
+        <activity android:name=".activity.NotificationActivity"/>
 
         <service android:name=".service.MyNotificationService"
             android:label="NotificationMonitor"

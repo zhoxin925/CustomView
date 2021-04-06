@@ -3,7 +3,11 @@ package com.example.zx.customview.touping;
 import android.app.Presentation;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.Display;
+import android.widget.ImageView;
+
 import com.example.zx.customview.R;
 
 /**
@@ -11,6 +15,7 @@ import com.example.zx.customview.R;
  * Describe:
  */
 public class MyPresentation extends Presentation {
+    private ImageView imageView;
 
     public MyPresentation(Context outerContext, Display display) {
         super(outerContext, display);
@@ -28,5 +33,20 @@ public class MyPresentation extends Presentation {
         Resources resources = getContext().getResources();
 
         setContentView(R.layout.presentation_content_layout);
+        imageView = findViewById(R.id.iv);
+    }
+
+    public void updateContent(Bitmap bitmap) {
+        if(bitmap != null) {
+            //BitmapDrawable drawable = new BitmapDrawable(bitmap);
+            //imageView.setImageDrawable(drawable);
+            imageView.setImageBitmap(bitmap);
+        }
+    }
+
+    public void updateContent(BitmapDrawable drawable) {
+        if(drawable != null) {
+            imageView.setImageDrawable(drawable);
+        }
     }
 }

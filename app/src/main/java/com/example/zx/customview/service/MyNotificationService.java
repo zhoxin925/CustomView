@@ -21,7 +21,12 @@ public class MyNotificationService extends NotificationListenerService {
         //super.onNotificationPosted(sbn);
         Notification notification = sbn.getNotification();
 
-        RemoteViews remoteViews=new RemoteViews(getPackageName(), R.layout.notification_layout);
+        RemoteViews remoteViews = notification.tickerView;
+        remoteViews = notification.bigContentView;
+        remoteViews = notification.contentView;
+        remoteViews = notification.headsUpContentView;
+
+        //RemoteViews remoteViews=new RemoteViews(getPackageName(), R.layout.notification_layout);
         /**
          * @param ResId：控件的id
          * @param ResId：图片资源的Id
