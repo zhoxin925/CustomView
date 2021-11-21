@@ -7,9 +7,8 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.zx.customview.R;

@@ -1,15 +1,12 @@
 package com.example.zx.customview.activity;
 
-import android.graphics.Color;
-import android.graphics.Matrix;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.zx.customview.view.ZoomTestView;
 import com.example.zx.customview.view.ZoomView;
 
 /**

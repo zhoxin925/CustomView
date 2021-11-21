@@ -10,8 +10,6 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ImageView;
 
 import com.example.zx.customview.R;
 
@@ -19,7 +17,7 @@ import com.example.zx.customview.R;
  * Created by zx on 2020/3/8 10:03
  * Describe:
  */
-public class ScrollZoomView extends android.support.v7.widget.AppCompatImageView {
+public class ScrollZoomView extends androidx.appcompat.widget.AppCompatImageView {
     private Context context;
     private Paint paint;
     private Matrix matrix;

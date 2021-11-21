@@ -4,13 +4,12 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 /**
  * Created by zx on 2020/3/10 17:59
  * Describe:
  */
-public class MatrixBitmapImageView extends android.support.v7.widget.AppCompatImageView {
+public class MatrixBitmapImageView extends androidx.appcompat.widget.AppCompatImageView {
 
     public MatrixBitmapImageView(Context context) {
         super(context);

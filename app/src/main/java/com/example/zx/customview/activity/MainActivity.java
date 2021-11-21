@@ -2,21 +2,16 @@ package com.example.zx.customview.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.zx.customview.R;
-import com.example.zx.customview.view.MatrixBitmapImageView;
+
 import android.widget.TextView;
 
-import com.example.zx.customview.R;
 import com.example.zx.customview.view.View11SlideBar;
-import com.example.zx.customview.view.View5ChartTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Context context;
