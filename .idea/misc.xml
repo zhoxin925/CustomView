@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/zxx/code/gitCode/CustomView/app/src/main/res/drawable/selector_bg.xml" value="0.34791666666666665" />
         <entry key="..\:/zxx/code/gitCode/CustomView/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/zxx/code/gitCode/CustomView/app/src/main/res/layout/activity_motionlayout.xml" value="0.1" />
+        <entry key="..\:/zxx/code/gitCode/CustomView/app/src/main/res/layout/activity_viewdraw_invalidate.xml" value="0.2" />
       </map>
     </option>
   </component>

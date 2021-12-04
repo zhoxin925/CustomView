@@ -15,7 +15,7 @@
         android:resizeableActivity="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.animation.MotionActivity"
+            android:name=".activity.ViewDrawInvalidateActivity"
             android:hardwareAccelerated="false"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
@@ -41,7 +41,8 @@
         <activity android:name=".activity.animation.ColorAnimActivity"/>
         <activity android:name=".activity.NotificationActivity"/>
         <activity android:name=".activity.RotateActivity"/>
-<!--        <activity android:name=".activity.animation.MotionActivity"/>-->
+        <activity android:name=".activity.animation.MotionActivity"/>
+<!--        <activity android:name=".activity.ViewDrawInvalidateActivity"/>-->
 
         <service android:name=".service.MyNotificationService"
             android:label="NotificationMonitor"

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:orientation="vertical"
+        android:background="#EFADAD"
+        >
+        <Button
+            android:id="@+id/add"
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/selector_bg"
+            android:text="添加add"/>
+        <Button
+            android:id="@+id/remove"
+            android:layout_marginTop="20dip"
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/selector_bg"
+            android:text="移除remove"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="#F4F0CC"
+        >
+    </FrameLayout>
+
+</LinearLayout>
