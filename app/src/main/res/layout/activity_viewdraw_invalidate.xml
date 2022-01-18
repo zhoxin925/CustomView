@@ -37,6 +37,11 @@
         android:layout_margin="10dip"
         android:background="#F4F0CC"
         >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            />
     </FrameLayout>
 
 </LinearLayout>

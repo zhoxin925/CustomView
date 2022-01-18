@@ -66,7 +66,7 @@ public class ViewDrawInvalidateActivity extends AppCompatActivity implements Vie
         switch (v.getId()) {
             case R.id.add:
                 customViewF = new RelativeLayout(this);
-                customViewF.setBackgroundColor(Color.BLUE);
+                customViewF.setBackgroundColor(0xffF4F0CC/*Color.BLUE*/);
 
                 customViewF.addView(cView);
                 customViewF.addView(surfaceView);
@@ -114,6 +114,7 @@ public class ViewDrawInvalidateActivity extends AppCompatActivity implements Vie
         public void surfaceCreated(@NonNull SurfaceHolder holder) {
             Canvas canvas = holder.lockCanvas();
             if(canvas != null) {
+                canvas.drawColor(0xffF4F0CC);
                 canvas.drawBitmap(bitmap, 0, 0, null);
                 holder.unlockCanvasAndPost(canvas);
             }
